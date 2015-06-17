@@ -1,0 +1,8 @@
+<!-- Breadcrumb --> <div class="page-title"> <div class="row"> <div class="col s12 m9 l10"> <h1>{{config.page.name}}</h1> <ul> <li> <a ui-sref="index"><i class="fa fa-home"></i> {{config.page.name}}</a> <i class="fa fa-angle-right"></i> </li> <li>{{config.page.name}}</li> </ul> </div> </div> </div> <script>$(document).ready(function(){
+    $(".nano .nano-content ul li").each(function(){
+      if( $(this).hasClass("open") ){
+        $(this).delay(500).click();
+        $(this).find("ul").css("display", "none");
+      }
+    });
+  });</script>

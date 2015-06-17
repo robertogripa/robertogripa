@@ -1,0 +1,46 @@
+<!-- Preloader> 
+  <div id="preloader" ng-show="config.page.loading">
+    <div class="loader">
+          <div class="col s12 m4 center">
+            <div class="preloader-wrapper small active">
+              <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>    
+  </div>
+<preloader end--> <div class="page-title"> <div class="row"> <div class="col s12 m9 l10"> <h1>{{config.page.name}}</h1> <ul> <li> <a ui-sref="home.main"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-right"></i> </li> <li>{{config.page.name}}</li> </ul> </div> </div> </div> <div class="card"> <div class="title"> <h5>{{config.page.name}}</h5> <div class="fixed-action-btn btn-extra mail-compose-btn"> <a ui-sref="home.{{config.page.newurl}}" class="mail-compose-btn btn-floating btn-extra waves-effect waves-light teal z-depth-2 z-depth-4-hover"> <i class="mdi mdi-content-add"></i> </a> </div> </div> <div class="content"> <div class="table-responsive"> <table class="table table-striped table-advance table-hover"> <thead> <tr> <th>Selecionar <th>Código <th style="width: 30%">Título <th class="hidden-xs" style="width: 55%">Usuário <th class="hidden-xs">Status <th class="hidden-xs" style="width: 15%">Ação   <tbody> <tr ng-repeat="post in Model"> <th> <input type="checkbox" id="checkbox{{post.id}}"> <label for="checkbox{{post.id}}"></label>  <td>{{post.id}} <td>{{post.title}} <td class="hidden-xs"> <img src="images/user-30x30.fbc5d04c.jpg" alt="John Doe" class="left circle photo" style="clear: both"><div class="left" style="margin-left: 5px; line-height: 30px">{{post.name_user}}</div> <td class="blue-text hidden-xs">Pendente <td class="hidden-xs"> <div class="btn-group"> <a ng-href="home/{{config.page.editurl}}/{{post.id}}" class="btn-floating waves-effect waves-light btn-small blue"><i class="fa fa-pencil"></i></a> <a ng-click="remove({{post.id}})" class="btn-floating waves-effect waves-light btn-small red"><i class="fa fa-trash"></i></a> </div>    </table> </div> </div> </div> <div class="material-tooltip" style="opacity: 1; margin-top: 0px; margin-left: 0px; display: inherit; left: 1538.8125px; top: 359.3125px"> <span>Novo</span> <div class="backdrop" style="top: 0px; left: 0px; opacity: 1; transform: scale(1); display: inherit; width: 14px; height: 14px; border-radius: 14px 0px 0px 14px; transform-origin: 95% 50% 0px; margin-top: 18px; margin-left: 45px"></div> </div>
